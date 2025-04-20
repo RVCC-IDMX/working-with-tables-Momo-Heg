@@ -1,3 +1,168 @@
 body {
-  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212; 
+  color: #d1d1d1; 
+  margin: 0;
+  background-image: url(img/Lighting-unsplash.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+h1 {
+  font-family: "Barriecito", cursive;
+  font-size: 2.5rem;
+  color: #00FF7F; 
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border-bottom: 3px solid #FF69B4; 
+}
+
+.intro {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); 
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.intro h2 {
+  font-family: "Barriecito", cursive;
+  font-size: 2rem;
+  color: #00FFFF; 
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #FFD700; 
+  line-height: 1.6;
+}
+
+.table-container {
+  margin: 20px auto;
+  padding: 0 20px;
+  max-width: 1000px;
+}
+
+.dj-icon {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #bd9fae;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+  
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.9); 
+  border: 2px solid #FF4500; 
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-container caption {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #8A2BE2; 
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.table-container th {
+  background-color: #1E90FF; 
+  color: #101833;
+  font-family: "Barriecito", cursive;
+  font-size: 1.2rem;
+  padding: 12px;
+  text-align: left;
+}
+
+.table-container td {
+  padding: 10px;
+  border: 1px solid #7A8196;
+  color: #d1d1d1; 
+  font-family: "Roboto", sans-serif;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #2A3354;
+}
+
+.table-container tr:hover {
+  background-color: #3A4564;
+}
+
+footer {
+  color: #7A8196;
+  border: 5px solid #1E90FF; 
+  background-color: rgba(0, 0, 0, 0.8); 
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  font-size: 1.1em;
+  border-radius: 5px;
+}
+
+/* Styles */
+@media (max-width: 767px) {
+  .intro {
+      padding: 15px;
+  }
+
+  .intro h2 {
+      font-size: 1.5rem;
+  }
+
+  .intro p {
+      font-size: 0.9rem;
+  }
+
+  .table-container table {
+      font-size: 0.9rem;
+  }
+
+  .table-container th, .table-container td {
+      padding: 8px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .intro {
+      padding: 20px;
+  }
+
+  .intro h2 {
+      font-size: 1.8rem;
+  }
+
+  .table-container table {
+      font-size: 1rem;
+  }
+
+  .table-container th, .table-container td {
+      padding: 10px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+      padding: 30px;
+  }
+
+  .table-container table {
+      font-size: 1.1rem;
+  }
+
+  .table-container th, .table-container td {
+      padding: 12px;
+  }
 }
